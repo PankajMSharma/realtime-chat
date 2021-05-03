@@ -8,7 +8,8 @@ Realtime Chat. NodeJs and Socket.io based.
 Simple broadcast chat based on nodejs and socket.io
 
 # How to Run
-    - `node server.js`
+      `npm install`
+      `node server.js`
     - Open app.html in browser
 
     - Now you are good to go
