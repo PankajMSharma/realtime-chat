@@ -1,0 +1,32 @@
+{
+  "name": "realtime-chat",
+  "version": "1.0.0",
+  "description": "Realtime chat with nodejs and socket.io",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js",
+    "start": "node server.js",
+    "serve": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PankajMSharma/realtime-chat.git"
+  },
+  "keywords": [
+    "realtime chat",
+    "chat",
+    "javascript",
+    "node.js",
+    "socket.io"
+  ],
+  "author": "Pankaj Sharma",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PankajMSharma/realtime-chat/issues"
+  },
+  "homepage": "https://github.com/PankajMSharma/realtime-chat#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^4.0.1"
+  }
+}

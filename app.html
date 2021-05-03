@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Chatter Many To Many</title>
+        <script defer src="http://localhost:3000/socket.io/socket.io.js"></script>
+        <script defer src="client.js"></script>
+    </head>
+    <style>
+        @font-face {
+            font-family: 'Avenir';
+            src: url('./assets/font/avenir_ff/AvenirLTStd-Roman.otf') format('opentype');
+        }
+        body {
+            display: flex; flex-direction: column; padding: 0; margin: 0px;
+        }
+        #chat-message-container {
+            flex: 1; min-height: 92vh; display: flex; flex-direction: column;
+        }
+        #chat-message-container > .message { 
+            background-color: blueviolet; 
+            padding: 0.7em;
+            font-family: 'Avenir';
+            border-radius: 20px;
+            box-shadow: 6px 7px 6px #f6f6f6;
+            color: #ffffff;
+            width: fit-content;
+            margin: 0.2em; }
+        #chat-message-container > .recieved { text-align: left }
+        #chat-message-container > .sent { text-align: right; align-self: flex-end; }
+        #send-message-form {
+            --chat-send-form-padding: 1em;
+            flex: 0; display: flex; position: fixed; bottom: 0;
+            background-color: #ffffff; width: calc(100% - var(--chat-send-form-padding)*2); 
+            padding: var(--chat-send-form-padding);
+        }
+        #chat-message-input { flex: 1; padding: 0.7em; }
+        #send-chat-message-button { flex: 0; padding: 0.7em; margin-left: 1em; }
+    </style>
+
+    <body>
+        <div id="chat-message-container"></div>
+        <form id="send-message-form">
+            <input id="chat-message-input" type="text"/>
+            <input id="send-chat-message-button" type="button" value="Send"/>
+        </form>
+    </body>
+</html>
